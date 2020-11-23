@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import "../styles/styles.css";
+
 const Characters = () => {
   //propiedad y funcion que van a trabajar con los personajes
   const [characters, setCharacters] = useState([]);
@@ -17,11 +19,14 @@ const Characters = () => {
   }, []);
 
   return (
-    <div className="Charcaters">
+    <div className="Characters">
       {
         /**con map() retornamos un nuevo arreglo donde por cada personaje mostramos el nombre */
         characters.map((character) => (
-          <h2>{character.name}</h2>
+          <article className="Characters-item">
+            <img src={character.image} alt={character.name} />
+            <h2>{character.name}</h2>
+          </article>
         ))
       }
     </div>

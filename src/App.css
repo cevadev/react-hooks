@@ -1,8 +1,30 @@
 .App {
-  text-align: center;
+  padding: 10px;
+  grid-template-columns: minmax(auto, 976px);
+  display: grid;
+  justify-content: center;
+  /* text-align: center; */
 }
 
-.App-logo {
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  /* color: #15302c; */
+}
+
+.bg-light {
+  background-color: #fafafa;
+  color: #252525;
+}
+
+.bg-dark {
+  background-color: #252525;
+  color: #fafafa;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -36,3 +58,4 @@
     transform: rotate(360deg);
   }
 }
+ */
